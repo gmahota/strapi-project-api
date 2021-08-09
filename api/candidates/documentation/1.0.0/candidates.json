@@ -552,6 +552,9 @@
           "status": {
             "type": "string"
           },
+          "debtCapacity": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -589,6 +592,9 @@
           },
           "status": {
             "type": "string"
+          },
+          "debtCapacity": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",

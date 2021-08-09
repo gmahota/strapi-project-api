@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "candidates",
   "info": {
-    "name": "Candidates"
+    "name": "Candidates",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -40,6 +41,9 @@
     },
     "status": {
       "type": "string"
+    },
+    "debtCapacity": {
+      "type": "decimal"
     }
   }
 }
