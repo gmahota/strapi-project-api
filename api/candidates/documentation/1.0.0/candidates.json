@@ -555,6 +555,9 @@
           "gender": {
             "type": "string"
           },
+          "debtCapacity": {
+            "type": "number"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -595,6 +598,9 @@
           },
           "gender": {
             "type": "string"
+          },
+          "debtCapacity": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
