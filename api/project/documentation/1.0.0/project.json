@@ -522,16 +522,16 @@
           "id": {
             "type": "string"
           },
-          "Code": {
+          "code": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Price": {
+          "price": {
             "type": "number"
           },
-          "CreatedAt": {
+          "createdAt": {
             "type": "string",
             "format": "date"
           },
@@ -543,16 +543,16 @@
       },
       "NewProject": {
         "properties": {
-          "Code": {
+          "code": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Price": {
+          "price": {
             "type": "number"
           },
-          "CreatedAt": {
+          "createdAt": {
             "type": "string",
             "format": "date"
           },
