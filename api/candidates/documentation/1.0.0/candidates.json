@@ -552,8 +552,8 @@
           "status": {
             "type": "string"
           },
-          "debtCapacity": {
-            "type": "number"
+          "gender": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -593,8 +593,8 @@
           "status": {
             "type": "string"
           },
-          "debtCapacity": {
-            "type": "number"
+          "gender": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

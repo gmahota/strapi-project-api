@@ -42,8 +42,8 @@
     "status": {
       "type": "string"
     },
-    "debtCapacity": {
-      "type": "decimal"
+    "gender": {
+      "type": "string"
     }
   }
 }
