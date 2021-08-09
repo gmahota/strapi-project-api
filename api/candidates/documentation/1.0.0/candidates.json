@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/projects": {
+    "/candidates": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the candidates's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve candidates document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Project"
+                    "$ref": "#/components/schemas/Candidates"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new candidates record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve candidates document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Candidates"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewCandidates"
               }
             }
           }
         }
       }
     },
-    "/projects/count": {
+    "/candidates/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of candidates documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve candidates document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "parameters": []
       }
     },
-    "/projects/{id}": {
+    "/candidates/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one candidates record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve candidates document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Candidates"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single candidates record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve candidates document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Project"
+                  "$ref": "#/components/schemas/Candidates"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProject"
+                "$ref": "#/components/schemas/NewCandidates"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single candidates record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single candidates based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Project"
+          "Candidates"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Project": {
+      "Candidates": {
         "required": [
           "id"
         ],
@@ -528,21 +528,29 @@
           "name": {
             "type": "string"
           },
-          "price": {
-            "type": "number"
+          "address": {
+            "type": "string"
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date"
+          "vat": {
+            "type": "string"
+          },
+          "phonenumber": {
+            "type": "string"
+          },
+          "cellphone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string"
           },
           "status": {
             "type": "string"
-          },
-          "total": {
-            "type": "number"
-          },
-          "totalPayment": {
-            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -550,7 +558,7 @@
           }
         }
       },
-      "NewProject": {
+      "NewCandidates": {
         "properties": {
           "code": {
             "type": "string"
@@ -558,21 +566,29 @@
           "name": {
             "type": "string"
           },
-          "price": {
-            "type": "number"
+          "address": {
+            "type": "string"
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date"
+          "vat": {
+            "type": "string"
+          },
+          "phonenumber": {
+            "type": "string"
+          },
+          "cellphone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string"
           },
           "status": {
             "type": "string"
-          },
-          "total": {
-            "type": "number"
-          },
-          "totalPayment": {
-            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -590,7 +606,7 @@
   },
   "tags": [
     {
-      "name": "Project"
+      "name": "Candidates"
     }
   ]
 }

@@ -23,6 +23,15 @@
     },
     "createdAt": {
       "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "totalPayment": {
+      "type": "decimal"
     }
   }
 }
